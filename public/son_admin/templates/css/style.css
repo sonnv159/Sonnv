@@ -1,0 +1,187 @@
+body td{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #444;
+}
+body{
+	width: 800px;
+	margin:30px auto;
+	background: url('../images/background.jpg');
+}
+fieldset {
+	padding:10px;
+	border-radius: 5px;
+	-webkit-box-shadow :5px;
+	-moz-box-shadow: 5px;
+}
+legend {
+	text-transform: uppercase;
+	color: #0A71A5;
+	font-weight: bold;
+	font-size: 14px;
+}
+a{
+	color: #555555;
+	text-decoration: none;
+}
+a:hover {
+	color: #FF9900;
+}
+#layout{
+	border-radius: 20px;							/* 4 góc đều được uốn cong */
+	-webkit-border-radius: 20px;
+	-moz-box-shadow: 20px;
+	box-shadow: 5px 5px 7px #333333; 				/* định vị trí bóng nằm dọc và ngang  */
+	-moz-box-shadow: 1px 1px 7px #333333 ; 			/* hỗ trợ cho firefox */
+	-webkit-box-shadow :5px 5px 7px #333333; 		/* hỗ trợ cho Chrome + Safira */
+}
+#top {
+	line-height: 50px;
+	background: #999966;
+	text-align: left;
+	font-weight: bold;
+	font-size: 20px;
+	
+	height: 60px;
+	border-radius: 5px 5px 0px 0px;				/*Top-left Top-right 0 0*/
+    -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+}
+#menu {
+    background-color: #E5E5E5;
+	padding:3px;								/* Thêm vào khoảng không cho thành phần */
+	font-weight: bold;
+
+}
+#main {
+	padding: 10px;
+	background-color: #FFFFFF; 
+}
+#bottom {
+	line-height: 40px;						/* thiết lập chiều cao giữa các dòng */
+	text-align: center;
+	font-size: 16px;
+
+	background: #999966;
+	height: 35px;
+	border-radius: 0px 0px 5px 5px;				/*0 0 Bottom-left Bottom-right*/
+    -moz-border-radius: 0px 0px 5px 5px;		
+    -webkit-border-radius: 0px 0px 5px 5px;
+}
+.err {
+	color: red;
+	margin-left :155px;
+	margin-bottom: 20px;
+}
+.form_label {
+	margin: 3px;
+	width: 80px;
+}
+.form_item {
+	margin: 3px;
+}
+/****************************
+	DÙNG CHO TRANG CHÍNH
+****************************/
+.function_table {
+	border-spacing: 10px;
+}
+.function_item {
+	border: 1px solid #FF9900;
+	width: 120px;
+	height: 40px;
+	text-align: center;
+	padding:85px 5px 5px 5px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.function_item:hover {
+	background-color: #f5f5f5;
+}
+.function_item a{
+	color: #555555;
+	font-weight: bold;
+}
+.function_item:hover a {
+	color: black;
+}
+.user_add {
+	background: url('../images/user_add.png') no-repeat center center;
+}
+.user_list {
+	background: url('../images/user_list.png') no-repeat center center;
+}
+.book_add {
+	background:  url('../images/book_add.png') no-repeat center center;
+}
+.book_list{
+	background: url('../images/book_list.png') no-repeat center center;
+}
+.comment_list{
+	background: url('../images/comment_list.png') no-repeat center center;
+}
+
+/****************************
+	BẢNG DANH SÁCH
+****************************/
+.list_table /* Bảng danh sách */ {
+	border: 1px solid #555555;
+	width: 95%;
+	margin: 10px auto;
+}
+.list_heading /* Tiêu đề bảng */ {
+	background-image: url('../images/background-1.png');
+	padding: 4px;
+	height: 20px;
+
+}
+.list_heading > td/* Ô ở dòng tiêu đề */ {
+	font-weight: bold;
+	color: white: ;
+	text-align: center;
+
+}
+.list_data > td/* Dòng chứa record */{
+	text-align: center;
+	border: 1px solid #eaeaea;
+	padding: 3px;
+}
+.list_data:hover {
+	background: #eaeaea;
+}
+.id_col {
+	width: 35px;
+}
+.action_col {
+	width: 65px;
+}
+/************************
+	TRANG NGƯỜI DÙNG
+*************************/
+#top img{
+	width: 800px;
+	height: 130px;
+}
+#top-menu {
+	font-size: 20px;
+	font-weight: bold;
+	color: #ffffcc;
+	background-color: #440000;
+	padding-top: 80px;	
+	line-height: 50px;
+	margin-bottom: -22px;
+	height: 85px;
+}
+.menu-page {
+	margin-left: 10px;
+}
+.menu-page > a{
+	color: #ffffcc;
+}
+.menu-page > a:hover{
+	color: #ff0;
+}
+#bg {
+	background-image: url('../images/background-2.png');
+}
