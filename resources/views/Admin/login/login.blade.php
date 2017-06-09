@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Trang đăng nhập</title>
-	<link rel="stylesheet" type="text/css" href="{!! asset('son_admin/style.css') !!}"/>
+	<link rel="stylesheet" type="text/css" href="{!! asset('son_admin/templates/css/style.css') !!}"/>
 </head>
 <body>
 	<div id="layout">
@@ -34,7 +34,7 @@
 			</fieldset>
 			</form>
 		</div>
-		<div id="bottom">2017</div>
+		<div id="bottom">Copyright &copy 2017</div>
 	</div>
 
 </body>

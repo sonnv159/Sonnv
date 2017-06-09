@@ -1,0 +1,330 @@
+body td{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #444;
+}
+body{
+	width: 800px;
+	margin:30px auto;
+}
+fieldset {
+	padding:10px;
+	border-radius: 5px;
+	-webkit-box-shadow :5px;
+	-moz-box-shadow: 5px;
+}
+legend {
+	text-transform: uppercase;
+	color: #0A71A5;
+	font-weight: bold;
+	font-size: 14px;
+}
+a{
+	color: #555555;
+	text-decoration: none;
+}
+a:hover {
+	color: #FF9900;
+}
+#bg-admin {
+	background: url('../images/background.jpg');
+}
+#layout{
+	border-radius: 20px;							/* 4 góc đều được uốn cong */
+	-webkit-border-radius: 20px;
+	-moz-box-shadow: 20px;
+	box-shadow: 5px 5px 7px #333333; 				/* định vị trí bóng nằm dọc và ngang  */
+	-moz-box-shadow: 1px 1px 7px #333333 ; 			/* hỗ trợ cho firefox */
+	-webkit-box-shadow :5px 5px 7px #333333; 		/* hỗ trợ cho Chrome + Safira */
+}
+#top {
+	line-height: 50px;
+	background: #999966;
+	text-align: left;
+	font-weight: bold;
+	font-size: 20px;
+	
+	height: 60px;
+	border-radius: 5px 5px 0px 0px;				/*Top-left Top-right 0 0*/
+    -moz-border-radius: 5px 5px 0px 0px;
+    -webkit-border-radius: 5px 5px 0px 0px;
+}
+#menu {
+    background-color: #E5E5E5;
+	padding:3px;								/* Thêm vào khoảng không cho thành phần */
+	font-weight: bold;
+
+}
+#main {
+	padding: 10px;
+	background-color: #FFFFFF; 
+}
+#bottom {
+	line-height: 40px;						/* thiết lập chiều cao giữa các dòng */
+	text-align: center;
+	font-size: 16px;
+	background: #999966;
+	height: 35px;
+	border-radius: 0px 0px 5px 5px;				/*0 0 Bottom-left Bottom-right*/
+    -moz-border-radius: 0px 0px 5px 5px;		
+    -webkit-border-radius: 0px 0px 5px 5px;
+}
+.err {
+	color: red;
+	margin-left :155px;
+	margin-bottom: 20px;
+}
+.form_label {
+	margin: 3px;
+	width: 80px;
+}
+.form_item {
+	margin: 3px;
+}
+/****************************
+	DÙNG CHO TRANG CHÍNH
+****************************/
+.function_table {
+	border-spacing: 10px;
+}
+.function_item {
+	border: 1px solid #FF9900;
+	width: 120px;
+	height: 40px;
+	text-align: center;
+	padding:85px 5px 5px 5px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+.function_item:hover {
+	background-color: #f5f5f5;
+}
+.function_item a{
+	color: #555555;
+	font-weight: bold;
+}
+.function_item:hover a {
+	color: black;
+}
+.user_add {
+	background: url('../images/user_add.png') no-repeat center center;
+}
+.user_list {
+	background: url('../images/user_list.png') no-repeat center center;
+}
+.book_add {
+	background:  url('../images/book_add.png') no-repeat center center;
+}
+.book_list{
+	background: url('../images/book_list.png') no-repeat center center;
+}
+.comment_list{
+	background: url('../images/comment_list.png') no-repeat center center;
+}
+
+/****************************
+	BẢNG DANH SÁCH
+****************************/
+.list_table /* Bảng danh sách */ {
+	border: 1px solid #555555;
+	width: 95%;
+	margin: 10px auto;
+}
+.list_heading /* Tiêu đề bảng */ {
+	background-image: url('../images/background-1.png');
+	padding: 4px;
+	height: 20px;
+
+}
+.list_heading > td/* Ô ở dòng tiêu đề */ {
+	font-weight: bold;
+	color: white: ;
+	text-align: center;
+
+}
+.list_data > td/* Dòng chứa record */{
+	text-align: center;
+	border: 1px solid #eaeaea;
+	padding: 3px;
+}
+.list_data:hover {
+	background: #eaeaea;
+}
+.id_col {
+	width: 35px;
+}
+.action_col {
+	width: 65px;
+}
+/************************
+	TRANG NGƯỜI DÙNG
+*************************/
+#bg {
+	width: 100%;
+	/*background-image: url('../images/background-2.png');*/
+}
+#layout_pages {
+	margin: 10px 80px 80px 80px;
+}
+#top_pages {
+	height: 110px
+}
+#top_login {
+	width: 100px;
+	float: right;
+	margin-top: 30px;
+	background-color:
+}
+#top_pages > img{
+	width: 200px;
+	height: 100px;
+
+}
+#top_menu_pages {
+	width: 100%
+	margin-top:-10px;
+	height: 45px;
+}
+#search_form {
+	font-size: 20px;
+	font-weight: bold;
+	color: #ffffcc;
+	border: 1px solid red;
+	margin-top:-10px;
+	line-height: 40px;
+	margin-bottom: 10px;
+	height: 45px;
+	width: 75%;
+	float: right;
+}
+#note {
+	width: 25%;
+	float:left;
+	font-size: 18px;
+	color: #aeaeae;
+}
+#icon {
+	margin: 10px;
+	width: 10%;
+	float: left;
+}
+#question {
+	text-align: center;
+	margin-top:3px;
+}
+#suggest {
+	float: right;
+}
+#content_pages {
+	width: 100%;
+}
+#main_pages {
+	padding: 10px;
+}
+#bottom_pages {
+	background: #333333;
+	height: 90px;
+	width: 88.5%; 
+	position: absolute;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	line-height: 110px;
+
+}
+
+.menu_page {
+	margin-left: 10px;
+}
+.menu_page > a{
+	color: #ffffcc;
+}
+.menu_page > a:hover{
+	color: #ff0;
+}
+.btn_Search {
+	color: white;
+	height: 45px;
+	background-color: #E83D43;
+	border: 0;
+	font-weight: bold;
+	width: 90px;
+	cursor: pointer;				/* Hiển thị con trỏ chuột khi di đến btn_Search */
+}
+.txt_Search {
+	height: 25px;
+	width: 500px;
+	font-size: 12px;
+	border-radius: 1px;
+
+}
+/*********View list book**********/
+.random_book {
+	width: 100%;
+	border-bottom: 1px solid #aeaeae ;
+}
+.list_book {
+	margin: 20px 100px;
+}
+.list_book > table {
+	border-spacing: 30px;
+}
+
+/*************Detail book***********/
+#info_book {
+	
+}
+#detail_book {
+	margin-left: 20px;
+}
+#detail_book > table {
+	border:1px solid black;
+}
+#title_book {
+	line-height: 1px;
+}
+#intro_book {
+	margin-top:20px;
+	margin-left: 20px;
+}
+#intro_book > p {
+	font-size:18px;
+
+}
+#intro {
+	font-size: 30px;
+	font-weight: bold;
+}
+#comment {
+	margin-left: 20px;
+	margin-top:20px;
+	border: 1px solid #aeaeae;
+	margin-bottom: 10px;
+}
+#comment_title {
+	font-size: 30px;
+	font-weight: bold;
+	background-color: #0594c9;
+	color: white;
+}
+#comment_content {
+	width: 700px;
+	height: 200px;
+	margin-top:20px;
+	margin-left:30px;
+}
+#comment_info {
+	text-align: center;
+}
+#comment_info > input {
+	width: 150px;
+	height: 50px;
+	background-color: #F6923C;
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+	margin-bottom: 20px;
+	margin-top: 20px
+}
+
