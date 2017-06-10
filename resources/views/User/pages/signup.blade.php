@@ -27,7 +27,7 @@
 			</tr>
 			<tr>
 				<td></td>
-				<td><input type="submit" name="ok" value="Thêm"></td>
+				<td><input type="submit" name="ok" value="Đăng ký"></td>
 			</tr>
 
 		</table>
