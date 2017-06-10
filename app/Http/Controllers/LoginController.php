@@ -30,7 +30,7 @@ class LoginController extends Controller
     	if(Auth::attempt($login1)||Auth::attempt($login2))
     		return redirect('admin');
     	else
-    		return redirect()->back()->with('status','Sai Username hoặc Password');
+    		return redirect()->back()->with(['status' => 'err','messages' => 'Sai Username hoặc Password']);
     }
     public function getLogout()
     {

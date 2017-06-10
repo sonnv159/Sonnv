@@ -20,5 +20,33 @@ Route::group(['middleware' => 'auth'],function(){
 		Route::get('/',function(){
 			return view('admin.dashboard.main');
 		});
+		Route::group(['prefix'=>'user'],function(){
+			Route::get('add',function(){
+				return view('admin.users.user_add');
+			});
+			Route::get('edit',function(){
+				return view('admin.users.user_edit');
+			});
+			Route::get('list',function(){
+				return view('admin.users.user_list');
+			});
+		});	
+		Route::group(['prefix'=>'book'],function(){
+			Route::get('add',function(){
+				return view('admin.books.book_add');
+			});
+			Route::get('edit',function(){
+				return view('admin.books.book_edit');
+			});
+			Route::get('list',function(){
+				return view('admin.books.book_list');
+			});
+		});
+		Route::get('comment',function(){
+			return view('admin.comments.comment_list');
+		});
 	});
+});
+Route::get('index',function(){
+	return view('user.pages.index');
 });
