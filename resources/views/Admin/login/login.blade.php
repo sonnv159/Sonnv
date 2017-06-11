@@ -7,6 +7,7 @@
 		@include('admin.blocks.error')
 		@include('admin.blocks.flash')
 		<legend>Thông tin đăng nhập</legend>
+		
 		<table>
 			<tr>
 				<td>Username</td>
