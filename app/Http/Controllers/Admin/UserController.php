@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\UserAddRequest;
+use App\Http\Requests\UserEditRequest;
 use App\Models\User;
 use App\Models\Role_user;
 use DateTime,Auth;
@@ -33,10 +34,10 @@ class UserController extends Controller
     }
     public function getUserList()
     {
-    	$data=User::paginate(10);
-       	return view('admin.users.user_list',['data' => $data] );
+    	$page=User::paginate(10);
+       	return view('admin.users.user_list',['page' => $page] );
     }
-    public function getUserDelete($id)
+    public function getUserDel($id)
     {
     	$current_login = Auth::user()->id;  /*user đang login*/
     	$user_delete = User::find($id);
@@ -56,8 +57,11 @@ class UserController extends Controller
     }
     public function getUserEdit($id)
     {
-    	$user=User::findorFail($id);
-    	$role=Role_user::where('user_id',$id)->get();
-    	return view('admin.users.user_edit',['user' => $user,'role'=>$role]);
+    	$user=User::find($id);
+    	return view('admin.users.user_edit',['user' => $user]);
+    }
+    public function postUserEdit(UserEditRequest $request)
+    {
+
     }
 }

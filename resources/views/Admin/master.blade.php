@@ -12,10 +12,10 @@
 	<div id="menu">
 		<table width="100%">
 			<tr>
-				<td><a href=""> Trang chính </a>
-				@if(Auth::user()->role_id==1)
-				| <a href=""> Quản Lý Thành Viên </a> | <a href=""> Quản Lý Bình Luận</a>
-				@endif
+				<td><a href="{!! url('admin') !!}"> Trang chính </a>
+				
+				| <a href="{!! route('getUserList') !!}"> Quản Lý Thành Viên </a> | <a href=""> Quản Lý Bình Luận</a>
+				
 				| <a href=""> Quản Lý Sách </a>
 				
 				 </td>
@@ -24,10 +24,13 @@
 		</table>
 	</div>
 	<div id="main">
+	@include('admin.blocks.error')
+	@include('admin.blocks.flash')
 	@yield('content')
 	</div>
 	<div id="bottom"></div>
 	</div>
 
 </body>
+<script type="text/javascript" src="{!! asset('son_admin/js/myjs.js') !!}"></script>
 </html>

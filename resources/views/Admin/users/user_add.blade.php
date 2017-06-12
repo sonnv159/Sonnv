@@ -8,7 +8,7 @@
 		<table>
 			<tr>
 				<td>Username</td>
-				<td><input type="text" name="txtUser" size="25">
+				<td><input type="text" name="txtUser" size="25" value="{!! old('txtUser') !!}">
 			</tr>
 			<tr>
 				<td>Password</td>
@@ -20,9 +20,9 @@
 			</tr>
 			<tr>
 				<td>Role</td>
-				<td><input type="radio" name="rdoRole" value="1">Admin
-					<input type="radio" name="rdoRole" value="2">Author
-					<input type="radio" name="rdoRole" value="3" checked="checked">Customer</td>
+				<td><input type="checkbox" name="cbRole[]" value="1">Admin
+					<input type="checkbox" name="cbRole[]" value="2">Author
+					<input type="checkbox" name="cbRole[]" value="3" checked="checked">Customer</td>
 			</tr>
 			<tr>
 				<td></td>
